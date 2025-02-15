@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255, 255, 255;
+  --foreground: 0, 0, 0;
+}
+
+[data-theme='dark'] {
+  --background: 15, 23, 42;
+  --foreground: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
