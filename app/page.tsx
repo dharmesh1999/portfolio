@@ -10,6 +10,8 @@ import { useState } from "react";
 export default function Home() {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
   const [hoveredProject, setHoveredProject] = useState<string | null>(null);
+  console.log("")
+
 
   const technologies = [
     { icon: <Code2 className="w-8 h-8" />, name: "Frontend Development", skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
